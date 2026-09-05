@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Home - Bake Me A Wish</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Bake Me A Wish!</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="menu.html">Menu</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+    <div id="game-container">
+        <div id="score-box">Score: <span id="score">0</span></div>
+        <div id="timer-bar-container"><div id="timer-bar"></div></div>
+        <canvas id="gameCanvas" width="500" height="700"></canvas>
+        <div id="question-box">Loading...</div>
+        <div id="feedback-banner"></div>
+        <div id="controls">
+            <button class="answer-btn" onclick="checkAnswer(0)"></button>
+            <button class="answer-btn" onclick="checkAnswer(1)"></button>
+            <button class="answer-btn" onclick="checkAnswer(2)"></button>
+        </div>
+    </div>
 
-  <!-- Main Content -->
-  <main>
-    <h2>Welcome to Bake Me A Wish!</h2>
-    <p>We create handcrafted cakes for every occasion - birthdays, weddings, and celebrations across Guyana.</p>
-    <p>Explore our gallery, check our menu, and place your order today!</p>
-
-    <!-- Call to Action -->
-    <a href="contact.html">Order Now</a>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Bake Me A Wish</p>
-  </footer>
+    <script src="game.js"></script>
 </body>
 </html>
